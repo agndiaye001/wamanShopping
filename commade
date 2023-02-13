@@ -1,0 +1,22 @@
+https://adn56.net/publicdocs/publications/jerome/raspberry-carnet-de-notes/server.html
+
+Demarre apache
+sudo service apache2 start
+
+demarre mysql
+sudo systemctl status mysql
+sudo systemctl enable mysql
+sudo systemctl start mysql
+
+create symfony 6 project
+symfony new --webapp nameProject
+cd nameProject
+symfony server
+
+
+
+DB
+└─$ symfony console doctrine:database:create
+└─$ symfony console make:migration
+└─$ symfony console doctrine:migration:migrate
+└─$ symfony console doctrine:schema:update --complete
